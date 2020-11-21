@@ -359,9 +359,45 @@ body{
     "size1 size2";
     grid-gap: 1rem;
 }
-
 .review{
+    height: 6rem;
+    display: flex;
+}
+.review--text{
     font-size: var(--main__header--font-size);
     font-weight: 400;
     width: 50rem;
+}
+.review--img{
+
+    width: 6rem;
+    height: 6rem;
+    background-image: url("assets/img/nerd4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: var(--header__contact-us--input-border-radius);
+    display: inline-block;
+}
+
+.review__information{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.review__information--name{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+}
+.review__information--company{
+    font-size: 1.0rem;
+    margin: 0;
+
+}
+
+.review--section{
+    display: flex;
 }
