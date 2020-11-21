@@ -35,7 +35,8 @@
     --grey-4: #BDBDBD;
     --grey-5: #E0E0E0;
     --grey-6: #F2F2F2;
-
+    --yellow-1: #F2C94C;
+    --orange-1: #EB5757;
 
     --header-indent-size: 10rem;
     --header-font-size: 2rem;
@@ -149,7 +150,9 @@ body{
 .grey-3{
     color: var(--grey-3);
 }
-
+.orange-1{
+    color: var(--orange-1);
+}
 
 .main--ident-left{
     margin-left: calc(var(--header-indent-size)/2);
@@ -211,6 +214,9 @@ body{
 .bc-green{
     background-color: var(--green-1);
 }
+.bc-yellow{
+    background-color: var(--yellow-1);
+}
 .mt-10r{
     margin-top: 10rem;
 }
@@ -231,13 +237,65 @@ body{
 .main__project--image{
     height: 30rem;
     width: 30rem;
-    background-color: #27AE60;
     border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
 }
+
+.image2{
+    background-image: url("assets/img/3ccde7e0fac63457b382b7c7cb64d111.png");
+}
+.image3{
+    background-image: url("assets/img/ad723eb4bcb16d0458d93d80362707e4.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60rem;
+    width: 60rem;
+    position: absolute;
+    transform: rotate(-30deg);
+    transform-origin: 100px;
+    z-index: 3;
+}
+.image1{
+    background-image: url("assets/img/desktop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 26rem;
+    width: 40rem;
+    position: absolute;
+    transform: rotate(-15deg);
+    transform-origin: bottom;
+    z-index: 3;
+}
+.image4{
+    background-image: url("assets/img/juice.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 26rem;
+    width: 40rem;
+    position: absolute;
+    transform: rotate(-15deg);
+    transform-origin: bottom;
+    z-index: 3;
+}
+
 .main__project--type{
     font-size: 0.8rem;
+}
+.main__project--title{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
 }
 .break {
     flex-basis: 100%;
     height: 0;
 }
+
+.m-0{
+    margin: 0;
+}
+
