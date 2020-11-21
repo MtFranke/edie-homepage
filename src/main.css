@@ -44,6 +44,8 @@
     --header__contact-us--input-border-radius: 0.5rem;
 
     --main__header--font-size: 1.8rem;
+    --main__team__block-size: 12rem;
+    --main__team--img-border-radius: 2rem;
 }
 
 body{
@@ -194,7 +196,6 @@ body{
     height: 2rem;
     width: 6rem;
 }
-
 .main__services--icon-box{
     border-radius: 1rem;
     width: 4rem;
@@ -290,6 +291,13 @@ body{
     font-size: 1.2rem;
     margin: 0.2rem 0;
 }
+.main__team--title{
+    width: 14rem;
+}
+.main__team--description{
+    width: 12rem;
+    font-size: 0.8rem;
+}
 .break {
     flex-basis: 100%;
     height: 0;
@@ -299,3 +307,61 @@ body{
     margin: 0;
 }
 
+.main__team--size3{
+    width: var(--main__team__block-size);
+    height: var(--main__team__block-size);
+    background-image: url("assets/img/nerd2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: var(--main__team--img-border-radius);
+    grid-area: size3;
+}
+.main__team--size2{
+    width: calc(var(--main__team__block-size)*1.2);
+    height: calc(var(--main__team__block-size)*1.2);
+    background-image: url("assets/img/nerd1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: size2;
+    border-radius: var(--main__team--img-border-radius);
+
+
+}
+.main__team--size1{
+    width: calc(var(--main__team__block-size)*1.4);
+    height: calc(var(--main__team__block-size)*1.4);
+    background-image: url("assets/img/nerd3.png");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: center;
+
+    border-radius: var(--main__team--img-border-radius);
+    grid-area: size1;
+    align-self: center;
+
+}
+
+.main__team__description-block{
+    align-self: center;
+    margin-right: 8rem;
+}
+
+.main__team{
+    display: flex;
+}
+
+.main__team--gallery{
+
+    display: grid;
+    grid-template-areas:
+    "size1 size3"
+    "size1 size2";
+    grid-gap: 1rem;
+}
+
+.review{
+    font-size: var(--main__header--font-size);
+    font-weight: 400;
+    width: 50rem;
+}
