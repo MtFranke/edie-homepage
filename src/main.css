@@ -2,15 +2,18 @@
 
 :root{
     --blue-1: #2D9CDB;
-    --header-indent-size: 10rem;
-    --header-font-size: 2rem;
     --grey-1: #333333;
     --grey-2: #4F4F4F;
     --grey-3: #828282;
     --grey-4: #BDBDBD;
     --grey-6: #F2F2F2;
+
+    --header-indent-size: 10rem;
+    --header-font-size: 2rem;
     --header__contact-us--input-heigth: 3rem;
     --header__contact-us--input-border-radius: 0.5rem;
+
+    --main__header--font-size: 1.8rem;
 }
 
 body{
@@ -36,6 +39,9 @@ body{
     padding: 0 1rem;
 }
 
+.header{
+    margin: 5rem 0;
+}
 .header__banner{
     background-image: url("assets/img/b67c46dacfbfc4df569e0bfa43f1e142.png");
     width: 100%;
@@ -46,7 +52,6 @@ body{
     border-radius: 1rem;
     margin: 2rem 0;
 }
-
 .header__question--color{
     color: var(--blue-1);
 }
@@ -77,25 +82,33 @@ body{
     padding: 0;
 }
 .header__contact-us--input::placeholder{
-    text-indent: 0.5rem;
+    text-indent: 1rem;
+    color: var(--grey-4);
+    font-size: 1rem;
 }
 .header__contact-us--button{
     background-color: var(--blue-1);
     color: var(--grey-6);
     border: none;
     width: 4rem;
-    height: var(--header__contact-us--input-heigth);
-    padding: 0.3rem;
-
+    border-radius: var(--header__contact-us--input-border-radius);
+    height: calc(var(--header__contact-us--input-heigth) - 0.4rem);
 
 }
 .header__contact-us--button-wrapper{
     background-color: var(--grey-6);
-    display: inline-block;
     height: var(--header__contact-us--input-heigth);
     border-bottom-right-radius: var(--header__contact-us--input-border-radius);
     border-top-right-radius: var(--header__contact-us--input-border-radius);
-
+    padding: 0 0.2rem;
+    display: flex;
+    align-items: center;
+}
+.header__contact-us--question{
+    font-size: 0.8rem;
+}
+.flex{
+    display: flex;
 }
 .grey-1{
     color: var(--grey-1);
@@ -108,3 +121,22 @@ body{
 }
 
 
+.main--ident-left{
+    margin-left: calc(var(--header-indent-size)/2);
+}
+.main--header{
+    font-size: var(--main__header--font-size);
+    font-weight: 400;
+    width: 22%;
+}
+.main__services{
+    display: flex;
+}
+
+.main__services--role{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.main__services--button{
+    border-radius: 1rem;
+}
