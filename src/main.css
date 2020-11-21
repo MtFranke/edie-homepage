@@ -157,7 +157,7 @@ body{
 .main--header{
     font-size: var(--main__header--font-size);
     font-weight: 400;
-    width: 22%;
+    width: 20rem;
 }
 .main__services{
     display: flex;
@@ -210,4 +210,34 @@ body{
 }
 .bc-green{
     background-color: var(--green-1);
+}
+.mt-10r{
+    margin-top: 10rem;
+}
+.main__projects{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100rem;
+}
+
+.main__project{
+    margin: 0 0.5rem;
+}
+.main__project--end{
+    align-self: flex-end;
+}
+
+
+.main__project--image{
+    height: 30rem;
+    width: 30rem;
+    background-color: #27AE60;
+    border-radius: 1rem;
+}
+.main__project--type{
+    font-size: 0.8rem;
+}
+.break {
+    flex-basis: 100%;
+    height: 0;
 }
