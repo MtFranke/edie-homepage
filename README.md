@@ -3,8 +3,8 @@
 - [Figma](https://www.figma.com/file/ahnGupP4JjTdVJDTRfMRF2/edie-homepage?node-id=0%3A1)
 
 ## Stack
-- Vanilia css3/html 
-- [Tailwind](https://tailwindcss.com/)
+- npm
+
 
 ## User Stories
 - I can see a page following the given design

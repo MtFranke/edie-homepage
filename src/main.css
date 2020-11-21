@@ -2,14 +2,19 @@
 
 :root{
     --light-blue: #2D9CDB;
-    --header-indent-size:10rem;
+    --header-indent-size: 10rem;
+    --header-font-size: 2rem;
+    --grey-1: #333333;
+    --grey-2: #4F4F4F;
+    --grey-3: #828282;
+    --grey-4: #BDBDBD;
+    --grey-6: #F2F2F2;
 }
 
 body{
     font-family: 'Poppins', sans-serif;
     margin: 3rem;
 }
-
 
 .nav__logo{
     font-weight: bolder;
@@ -37,12 +42,32 @@ body{
     background-size: cover;
     height: 20rem;
     border-radius: 1rem;
+    margin: 2rem 0;
 }
 
-.header__question{
+.header__question--color{
     color: var(--light-blue);
 }
-
 .header--left-indent{
     padding-left: var(--header-indent-size);
+}
+.header--font-size{
+    font-size: var(--header-font-size);
+    font-weight: 400;
+}
+.header__width--upper{
+    width: 27%;
+}
+.header__width--down{
+    width: 18%;
+}
+.grey-1{
+    color: var(--grey-1);
+}
+.grey-2{
+    color: var(--grey-2);
+}
+.grey-3{
+    color: var(--grey-3);
+
 }
