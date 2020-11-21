@@ -1,12 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,800&display=swap');
 
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px !important;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
 :root{
     --blue-1: #2D9CDB;
+    --red-1: #EB5757;
+    --green-1: #27AE60;
     --grey-1: #333333;
     --grey-2: #4F4F4F;
     --grey-3: #828282;
     --grey-4: #BDBDBD;
+    --grey-5: #E0E0E0;
     --grey-6: #F2F2F2;
+
 
     --header-indent-size: 10rem;
     --header-font-size: 2rem;
@@ -19,6 +48,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 3rem;
+    background-color: #FFFFFF;
 }
 
 .nav__logo{
@@ -133,10 +163,51 @@ body{
     display: flex;
 }
 
+.main__service{
+    width: 16rem;
+    margin: 0 1rem;
+    padding: 2rem;
+}
+
+.main__service:hover{
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+    border-radius: 24px;
+}
+
+.main__service:hover .main__services--button{
+    color: white;
+    background-color: var(--blue-1);
+}
 .main__services--role{
     font-size: 1.2rem;
     font-weight: bolder;
 }
 .main__services--button{
+    border-radius: 0.5rem;
+    color: var(--grey-3);
+    background-color: var(--grey-5);
+    border: none;
+    height: 2rem;
+    width: 6rem;
+}
+
+.main__services--icon-box{
     border-radius: 1rem;
+    width: 4rem;
+    height: 4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bc-red{
+    background-color: var(--red-1);
+}
+.bc-blue{
+    background-color: var(--blue-1);
+}
+.bc-green{
+    background-color: var(--green-1);
 }
