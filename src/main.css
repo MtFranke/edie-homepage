@@ -407,4 +407,55 @@ body{
     margin-top: 10rem;
     height: 20rem;
     background-color: #100E1D;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.footer-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 6rem;
+    align-items: flex-start;
+    width: 100%;
+    padding: 3rem;
+    justify-content: space-around;
+
+}
+
+.footer__navigation{
+    font-size: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.footer__social-media{
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.footer__social-media--icons{
+    height: 2rem;
+    width: 2rem;
+}
+
+.footer__social-media--header{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    align-self: center;
+}
+.footer__social-media--section{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+small{
+    display: block;
+    width: 100%;
+    color: #A9A9A9;
+    text-align: center;
 }
