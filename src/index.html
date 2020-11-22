@@ -12,15 +12,15 @@
     <nav class="nav">
         <h1 class="nav__logo grey-1">Edie</h1>
         <ul class="nav__items">
-            <li class="nav_item grey-1">Home</li>
-            <li class="nav_item grey-1">Services</li>
-            <li class="nav_item grey-1">Our works</li>
-            <li class="nav_item grey-1">Clients</li>
-            <li class="nav_item grey-1">Contacts</li>
+            <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('home'))">Home</li>
+            <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('services'))">Services</li>
+            <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('works'))">Our works</li>
+            <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('clients'))">Clients</li>
+            <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('contact-us'))">Contacts</li>
         </ul>
     </nav>
     <header class="header">
-        <p  class="header__question--color header--left-indent">Unhappy with your website?</p>
+        <p  class="header__question--color header--left-indent" id="home">Unhappy with your website?</p>
         <h2 class="header--left-indent header--font-size header__width--upper grey-1">We create beautiful and fast web services</h2>
         <div class="header__banner"></div>
         <h2 class="header--left-indent header--font-size header__width--down grey-1">Story, emotion and purpose</h2>
@@ -37,8 +37,8 @@
     </header>
 
     <main class="main--ident-left">
-        <h3 class="grey-1 main--header mt-10r">We offer high demand services</h3>
-        <section class="main__services">
+        <h3 class="grey-1 main--header mt-10r" id="services">We offer high demand services</h3>
+        <section class="main__services" >
             <div class="main__service">
                 <div class="main__services--icon-box bc-blue"><i class="material-icons">create</i></div>
                 <h4 class="main__services--role grey-1">UI/UX Design</h4>
@@ -58,7 +58,7 @@
                 <button class="main__services--button">Get started</button>
             </div>
         </section>
-        <h3 class="grey-1 main--header mt-10r">Good design means good business</h3>
+        <h3 class="grey-1 main--header mt-10r" id="works">Good design means good business</h3>
         <section class="main__projects">
             <div class="main__project main__project--end">
                 <div class=" bc-red main__project--image">
@@ -100,8 +100,8 @@
                 <div class="main__team--size3"></div>
             </div>
         </section>
-        <section class="mt-10r ">
-            <h3 class="grey-1 review--text">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</h3>
+        <section class="mt-10r">
+            <h3 class="grey-1 review--text" id="clients">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</h3>
             <div class="review">
                 <div class="review--img">img</div>
                 <div class="review__information">
@@ -134,7 +134,7 @@
                 </nav>
             </section>
             <section class=" header__contact-us">
-                <p class="grey-6 header__contact-us--question ">Want us to contact you?</p>
+                <p class="grey-6 header__contact-us--question" id="contact-us">Want us to contact you?</p>
                 <div class="flex">
                     <input class="header__contact-us--input" type="text" placeholder="Email">
                     <div class="header__contact-us--button-wrapper">
@@ -145,5 +145,6 @@
         </section>
         <small>Mateusz Franke @ DevChallenges.io</small>
     </footer>
+<script src="main.js"></script>
 </body>
 </html>
