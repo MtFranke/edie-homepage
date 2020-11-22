@@ -137,6 +137,11 @@ body {
     .project-mt{
         margin: 1rem !important;
     }
+    .see-more{
+        margin-top:2rem !important;
+        justify-content: flex-start !important;
+
+    }
 
 }
 @media only screen and (max-width: 1037px) {
@@ -395,6 +400,13 @@ body {
 
 .main__project {
     /*margin: 0 0.5rem;*/
+}
+
+.see-more{
+    margin-top: 7rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.3rem;
 }
 
 .main__project--end {
