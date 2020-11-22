@@ -71,6 +71,8 @@ body{
 
 .home-area{
     grid-area: home;
+    margin: 0 5% !important;
+
 }
 
 .services-area{
@@ -102,24 +104,34 @@ body{
 
 .nav{
     margin: 3rem;
+    display: flex;
+    justify-content: space-between;
 }
 .nav__logo{
     font-weight: bolder;
     margin: 0;
     display: inline;
     font-size: 2rem;
-    width: 12%;
 }
 .nav__items{
     display: inline-flex;
     justify-content: flex-end;
-    width: 88%;
 }
 
 .nav__items > li
 {
     list-style-type: none;
     padding: 0 1rem;
+}
+
+@media only screen and (max-width: 1037px) {
+    .nav__items{
+        display: none;
+    }
+    .menu-icon{
+        display: block !important;
+    }
+
 }
 
 @media only screen and (max-width: 990px) {
@@ -141,6 +153,16 @@ body{
   .header__width--down{
       width: unset !important;
   }
+    .header__width--upper{
+        width: unset !important;
+
+    }
+}
+
+.menu-icon{
+    display: none;
+    justify-self: flex-end;
+
 }
 
 .header{
