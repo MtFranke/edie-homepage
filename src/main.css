@@ -49,10 +49,57 @@
 }
 
 body{
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     background-color: #FFFFFF;
+    display: grid;
+    grid-template-areas:
+            "nav"
+            "home"
+            "services"
+            "works"
+            "team"
+            "client"
+            "footer";
+
 }
+
+.nav-area{
+    grid-area: nav;
+}
+
+.home-area{
+    grid-area: home;
+}
+
+.services-area{
+    grid-area: services;
+    margin: 0 5%;
+}
+
+.works-area{
+    grid-area: works;
+    margin: 0 5%;
+
+}
+
+.team-area{
+    grid-area: team;
+    margin: 0 5%;
+
+}
+
+.client-area{
+    grid-area: client;
+    margin: 0 5%;
+
+}
+.footer-area{
+    grid-area: footer;
+
+}
+
 .nav{
     margin: 3rem;
 }
@@ -60,18 +107,40 @@ body{
     font-weight: bolder;
     margin: 0;
     display: inline;
-    width: 8%;
+    font-size: 2rem;
+    width: 12%;
 }
 .nav__items{
     display: inline-flex;
     justify-content: flex-end;
-    width: 92%;
+    width: 88%;
 }
 
 .nav__items > li
 {
     list-style-type: none;
     padding: 0 1rem;
+}
+
+@media only screen and (max-width: 990px) {
+    .main__team{
+        flex-direction: column;
+    }
+    .main__team--gallery {
+        align-self: center;
+    }
+}
+@media only screen and (max-width: 924px) {
+  .main__services{
+      justify-content: center;
+  }
+  .main--header{
+      width: unset !important;
+      text-align: center;
+  }
+  .header__width--down{
+      width: unset !important;
+  }
 }
 
 .header{
@@ -158,6 +227,10 @@ body{
     color: var(--orange-1);
 }
 
+.blue-1{
+    color: var(--blue-1);
+}
+
 .main--ident-left{
     margin-left: calc(var(--header-indent-size)/2);
 }
@@ -168,10 +241,13 @@ body{
 }
 .main__services{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
 }
 
 .main__service{
-    width: 16rem;
+    width: 20rem;
     margin: 0 1rem;
     padding: 2rem;
 }
@@ -226,7 +302,7 @@ body{
 .main__projects{
     display: flex;
     flex-wrap: wrap;
-    height: 100rem;
+    justify-content: center;
 }
 
 .main__project{
@@ -360,6 +436,7 @@ body{
     "size1 size3"
     "size1 size2";
     grid-gap: 1rem;
+    width: fit-content;
 }
 .review{
     height: 6rem;
