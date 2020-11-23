@@ -118,11 +118,14 @@ body {
     align-items: center;
     list-style: none;
     font-size: 2rem;
+    margin-top: 10rem;
 }
 #close{
-    align-self: flex-start;
-    justify-self: flex-end;
     font-size: 3rem !important;
+    position: absolute;
+    top:0;
+    right: 0;
+    margin: 3rem;
 }
 .navigation__dropdown--flex  li {
     list-style: none;
