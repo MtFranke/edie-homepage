@@ -1,8 +1,5 @@
-let al = function alert(){
-    console.log('alrt')
-}
 
-window.smoothScroll = function(target) {
+window.smoothScroll = function (target) {
     var scrollContainer = target;
     do { //find scroll container
         scrollContainer = scrollContainer.parentNode;
@@ -16,11 +13,15 @@ window.smoothScroll = function(target) {
         targetY += target.offsetTop;
     } while (target = target.offsetParent);
 
-    scroll = function(c, a, b, i) {
-        i++; if (i > 30) return;
+    scroll = function (c, a, b, i) {
+        i++;
+        if (i > 30) return;
         c.scrollTop = a + (b - a) / 30 * i;
-        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+        setTimeout(function () {
+            scroll(c, a, b, i);
+        }, 20);
     }
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+

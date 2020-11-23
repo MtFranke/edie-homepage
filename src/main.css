@@ -102,12 +102,15 @@ body {
 
 }
 
-.menu-navigation{
+.navigation__dropdown{
     width: 100vw;
     height: 100vh;
     background-color: white;
     color:black;
     display: none;
+    z-index: 10;
+    position: absolute;
+    top: 0;
 }
 
 .nav {
@@ -148,10 +151,10 @@ body {
     .nav__items {
         display: none;
     }
-
     .menu-icon {
         display: block !important;
     }
+
 }
 
 @media only screen and (max-width: 990px) {
@@ -206,7 +209,7 @@ body {
 .menu-icon {
     display: none;
     justify-self: flex-end;
-
+    cursor: pointer;
 }
 
 .header {

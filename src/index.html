@@ -18,12 +18,20 @@
             <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('clients'))">Clients</li>
             <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('contact-us'))">Contacts</li>
         </ul>
-        <div class="menu-icon">
+        <div class="menu-icon" id="hamburger" onclick="showMenu()">
             <i class="material-icons ">menu</i>
         </div>
 
     </nav>
-    <nav class="menu-navigation">
+    <nav class="navigation__dropdown">
+        <ul>
+            <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('home'))">Home</li>
+            <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('services'))">Services</li>
+            <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('works'))">Our works</li>
+            <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('clients'))">Clients</li>
+            <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('contact-us'))">Contacts</li>
+        </ul>
+        <i class="material-icons" id="close">close</i>
 
     </nav>
     <header class="header home-area">
@@ -154,5 +162,13 @@
         <small>Mateusz Franke @ DevChallenges.io</small>
     </footer>
 <script src="main.js"></script>
+<script>
+    document.getElementById("hamburger").addEventListener("click", function () {
+        document.getElementsByClassName("navigation__dropdown")[0].style.display = "block";
+    });
+    document.getElementById("close").addEventListener("click", function () {
+        document.getElementsByClassName("navigation__dropdown")[0].style.display = "none";
+    });
+</script>
 </body>
 </html>
