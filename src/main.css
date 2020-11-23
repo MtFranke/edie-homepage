@@ -112,7 +112,21 @@ body {
     position: absolute;
     top: 0;
 }
-
+.navigation__dropdown--flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 2rem;
+}
+#close{
+    align-self: flex-start;
+    justify-self: flex-end;
+    font-size: 3rem !important;
+}
+.navigation__dropdown--flex  li {
+    list-style: none;
+}
 .nav {
     margin: 3rem;
     display: flex;

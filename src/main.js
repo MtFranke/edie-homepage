@@ -1,5 +1,7 @@
 
 window.smoothScroll = function (target) {
+    document.getElementsByClassName("navigation__dropdown")[0].style.display = "none";
+
     var scrollContainer = target;
     do { //find scroll container
         scrollContainer = scrollContainer.parentNode;
@@ -23,5 +25,6 @@ window.smoothScroll = function (target) {
     }
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+
 }
 

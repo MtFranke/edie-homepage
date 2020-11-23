@@ -24,14 +24,21 @@
 
     </nav>
     <nav class="navigation__dropdown">
-        <ul>
-            <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('home'))">Home</li>
-            <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('services'))">Services</li>
-            <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('works'))">Our works</li>
-            <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('clients'))">Clients</li>
-            <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('contact-us'))">Contacts</li>
-        </ul>
-        <i class="material-icons" id="close">close</i>
+        <div class="navigation__dropdown--flex">
+            <ul>
+                <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('home'))">Home</li>
+                <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('services'))">Services</li>
+                <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('works'))">Our works</li>
+                <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('clients'))">Clients</li>
+                <li class="nav_item grey-1" onclick="smoothScroll(document.getElementById('contact-us'))">Contacts</li>
+            </ul>
+            <div  id="close">
+                <i class="material-icons">close</i>
+            </div>
+
+        </div>
+
+
 
     </nav>
     <header class="header home-area">
